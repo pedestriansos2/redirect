@@ -1,10 +1,21 @@
 <!DOCTYPE html>
 <html>
-    <head></head>
+    <head>
+        <style>
+            *   {
+                margin: 0;
+                padding: 0;
+            }
+            iframe  {
+                width: 100vw;
+                height: 100vh;
+            }
+        </style>
+    </head>
     <body>
         <iframe id="iframe"></iframe>
         <script>
-            document.getElementById("iframe").src = new URL(window.location.href)).searchParams.get("url");
+            document.getElementById("iframe").src = (new URL(window.location.href)).searchParams.get("url");
         </script>
     </body>
 </html>
