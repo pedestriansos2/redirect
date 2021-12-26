@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <iframe id="iframe"></iframe>
+        <script>
+            document.getElementById("iframe").src = new URL(window.location.href)).searchParams.get("url");
+        </script>
+    </body>
+</html>
